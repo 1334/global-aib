@@ -12,4 +12,26 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.nivo.slider
 //= require_tree .
+
+
+$(window).load(function() {
+  $('#slider').nivoSlider({
+    effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
+  directionNav:true, // Next & Prev navigation
+  controlNav:true, // 1,2,3... navigation
+  keyboardNav:true, // Use left & right arrows
+  pauseTime:5000, // How long each slide will show
+  pauseOnHover:false, // Stop animation while hovering
+  manualAdvance:false // Force manual transitions
+  });
+});
+
+window.addEventListener("load",function() {
+  // Set a timeout...
+  setTimeout(function(){
+    // Hide the address bar!
+    window.scrollTo(0, 1);
+  }, 0);
+});

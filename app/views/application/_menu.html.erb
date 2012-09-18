@@ -1,0 +1,19 @@
+	<header class="header">
+	      <nav>
+	      <h1><a href="/">AiB architects</a></h1>
+	      <ol>
+	      <%# <?php if(is_ios()) { %>
+	      <%# 	echo '<li><a href="redirect.php?cp=portfolio_ios" target="_blank">Portfolio</a></li>'; %>
+	      <%# 	echo '<li><a href="redirect.php?cp=profile_ios" target="_blank">Profile</a></li>'; %>
+	      <%# 	echo '<li><a href="redirect.php?cp=hospitals_ios" target="_blank">Hospitals</a></li>'; %>
+	      <%# } else { %>
+	      <%# 	echo '<li><a href="redirect.php?cp=portfolio">Portfolio</a></li>'; %>
+	      <%# 	echo '<li><a href="redirect.php?cp=profile">Profile</a></li>'; %>
+	      <%# 	echo '<li><a href="redirect.php?cp=hospitals">Hospitals</a></li>'; %>
+	      <%# } %>
+	      <%# ?> %>
+	        <li><%= link_to "About", about_path %></li>
+	        <li><%= link_to "Contact Us", contact_path %></li>
+	      </ol>
+	      </nav>
+	 </header>

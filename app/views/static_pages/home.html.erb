@@ -1,0 +1,7 @@
+<div class="slider-wrapper theme-default">
+  <div id="slider" class="nivoSlider">
+    <% @images.each do |image| %>
+      <%= image_tag (File.join @path, image), alt: "global-aib" %>
+    <% end %>
+  </div>
+</div>

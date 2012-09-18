@@ -1,4 +1,9 @@
 GlobalAib::Application.routes.draw do
+
+  match 'about' => 'static_pages#about'
+  match 'contact' => 'static_pages#contact'
+  root :to => 'static_pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

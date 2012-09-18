@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+/* header styles */
+
+.header {
+  width:900px;
+  top:30px;
+  left:50%; 
+  position:absolute; 
+  margin:auto auto auto -450px; 
+  nav {
+    h1 {
+      border-bottom: 0 none;
+      box-shadow: none;
+      float: left;
+      margin: 0;
+      padding: 0;
+      a {
+        background: url("/assets/general/global_logo.png") no-repeat scroll 0 0 transparent;
+        display: block;
+        height: 75px;
+        width: 276px;
+        text-indent: -9999em;
+        text-transform: capitalize;
+      }
+    }
+    ol {
+      float: right;
+      padding-top: 18px;
+      list-style: none outside none;
+
+      li {
+        border-right: 1px solid #C9DAD2;
+        box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.5);
+        float: left;
+        padding: 0 10px;
+      }
+
+      li:last-child {
+        border-right: 0 none;
+        box-shadow: none;
+        padding-right: 0;
+      }
+      li a {
+        border-radius: 5px 5px 5px 5px;
+        color: #707070;
+        display: block;
+        font: bold 1.3em/27px Tahoma,Arial,sans-serif;
+        padding: 0 25px;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+      }
+      li a:active {
+        text-decoration: underline;
+      }
+      li a:hover, li a:focus {
+        color: #333333;
+        background-color: transparent;
+      }
+    }
+  }
+}
