@@ -58,5 +58,11 @@ module GlobalAib
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    config.action_controller.asset_host = Proc.new { |source|
+        if source =~ /\b(.png|.jpg|.gif)\b/i
+          "assets.aib.cat"
+        end
+      }
   end
 end
